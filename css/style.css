@@ -686,7 +686,14 @@ a.navbar-brand :hover{
 	background-size: cover;
 }
 .bg5{
-	background: #222 url('../images/bgi-5.jpg') no-repeat fixed center center; 
+	background: #222 url('../images/poesia-bg.webp') no-repeat fixed center center; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+}
+.bg6{
+	background: #222 url('../images/hsjd-noche.jpg') no-repeat fixed center center; 
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
