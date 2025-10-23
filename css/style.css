@@ -887,7 +887,7 @@ a.navbar-brand :hover{
 .nav-tabs > li {
     float: left;
     margin-bottom: 0;
-    width: 25%;
+    width: 20%;
 	background-color: #fff;
 }
 .nav-tabs > li > a {
