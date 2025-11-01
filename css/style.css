@@ -664,6 +664,13 @@ a.navbar-brand :hover{
 	-o-background-size: cover; 
 	background-size: cover;
 }
+.bg1-1{
+	background: #222 url('../images/g-city-1-1.jpeg') no-repeat fixed center center; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+}
 .bg2{
 	background: #222 url('../images/durmientes.jpeg') no-repeat fixed center center; 
 	-webkit-background-size: cover; 
@@ -1913,13 +1920,17 @@ p.help-block.text-danger li {
 	width: 130px;
 	height: 130px;
 	border-radius: 50%;
-	background: #fff;
+	background: transparent;
 	color: #2189fe;
 	display: inline-table;
 	margin: 10px 10px;
 }
-.connect .item:hover{
-	background: #2189fe;
+.connect .item .fa-brands,
+.connect .item .fa-solid{
+	font-size: 100px;
+}
+.connect .item:hover .fa-brands,
+.connect .item:hover .fa-solid{
 	color: #fff;
 }
 .connect .item .fa{
