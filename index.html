@@ -1,706 +1,1099 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <!-- Basic Page Needs
+	<head>
+		<!-- Basic Page Needs
     ================================================== -->
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ciudad de Sombras</title>
-    <meta name="description" content="Desde tiempos inmemorables, el temor a la muerte ha sido uno de los preceptos que han acompañado a la humanidad.">
-    <meta name="keywords" content="Ciudad de sombras, misterio, suspenso, cultura, arte, cine, literatura, teatro">
-    <meta name="author" content="ciudad de sombras"> 
-	
+		<meta charset="utf-8" />
+		<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ciudad de Sombras</title>
+		<meta
+			name="description"
+			content="Desde tiempos inmemorables, el temor a la muerte ha sido uno de los preceptos que han acompañado a la humanidad."
+		/>
+		<meta
+			name="keywords"
+			content="Ciudad de sombras, misterio, suspenso, cultura, arte, cine, literatura, teatro"
+		/>
+		<meta name="author" content="ciudad de sombras" />
+
 		<!-- ==============================================
 		Favicons
 		=============================================== -->
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-		
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="images/apple-touch-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="images/apple-touch-icon-114x114.png"
+		/>
+
 		<!-- ==============================================
 		CSS
 		=============================================== -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<script src="https://kit.fontawesome.com/c2390e22f4.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-		<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-		<link rel="stylesheet" type="text/css" href="css/superslides.css">
+		<script
+			src="https://kit.fontawesome.com/c2390e22f4.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+		<link rel="stylesheet" type="text/css" href="css/superslides.css" />
 
-		
 		<!-- ==============================================
 		Google Fonts
 		=============================================== -->
-		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		
+		<link
+			href="https://fonts.googleapis.com/css?family=Dosis"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato"
+			rel="stylesheet"
+			type="text/css"
+		/>
+
 		<!-- ==============================================
 		Custom Stylesheet
 		=============================================== -->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	
-    <script type="text/javascript" src="js/modernizr.min.js"></script>
 
-</head>
+		<script type="text/javascript" src="js/modernizr.min.js"></script>
+		<script type="text/javascript" src="js/cache-manager.js"></script>
+	</head>
 
-<body data-spy="scroll" data-target="#navbar-spy" data-offset="0" class="scrollspy-example">
-	
-
-	<!-- Load page -->
-	<div class="animationload">
-		<div class="loader"></div>
-	</div>
-	
-	
-	<!-- NAVBAR SECTION -->
-	<div class="navbar navbar-main navbar-fixed-top">
-		<div class="container">
-		
-			<div class="top-sosmed pull-right">
-				<a href="https://www.facebook.com/ciudaddesombras" title="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-				<a href="https://x.com/ciudaddesombras" title="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-				<a href="https://www.tiktok.com/@ciudad.de.sombras.ec" title="" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-			</div>
-			
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">
-					<img src="images/cds-logo.jpg" alt="" />
-				</a>
-			</div>
-			
-			<nav id="navbar-spy" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">INICIO</a></li>
-					<li class="dropdown">
-					  <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRENSA <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-							<li><a href="noticias.html">Noticias</a></li>
-							<li><a href="eventos.html">Eventos</a></li>
-							<li><a href="editorial.html">Editorial</a></li>
-					  </ul>
-					</li>
-					<li class="dropdown">
-					  <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ARTÍCULOS <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-							<li><a href="poesia.html">Poesía</a></li>
-							<li><a href="narrativa.html">Narrativa</a></li>
-							<li><a href="/leyendas-pinsaqui.html">Leyendas</a></li>
-							<li><a href="/musica-chopin.html">Música</a></li>
-							<li><a href="/multimedia.html">Multimedia</a></li>
-					  </ul>
-					</li>
-					<li class="dropdown">
-					  <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AUDIOTECA <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-							<li><a href="audioteca-temporada-7.html">Temporada 7</a></li>
-							<li><a href="audioteca-temporada-6.html">Temporada 6</a></li>
-							<li><a href="audioteca-temporada-5.html">Temporada 5</a></li>
-							<li><a href="audioteca-temporada-4.html">Temporada 4</a></li>
-							<li><a href="audioteca-temporada-3.html">Temporada 3</a></li>
-							<li><a href="audioteca-temporada-2.html">Temporada 2</a></li>
-							<li><a href="audioteca-temporada-1.html">Temporada 1</a></li>
-					  </ul>
-					</li>
-					<li class="dropdown">
-					  <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TELEVISIÓN <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-							<li><a href="television-temporada-1.html">Temporada 1</a></li>
-					  </ul>
-					</li>
-
-				</ul>
-			</nav>
-			
+	<body
+		data-spy="scroll"
+		data-target="#navbar-spy"
+		data-offset="0"
+		class="scrollspy-example"
+	>
+		<!-- Load page -->
+		<div class="animationload">
+			<div class="loader"></div>
 		</div>
-    </div>
- 
-	<!-- BANNER -->
-	<div id="slides" class="section banner">
-		<ul class="slides-container">
-			<li>
-				<img src="images/slide-1-1.jpg" alt="">
-				<div class="carousel-caption">
-					<div class="container">
-						<div class="wrap-caption">
-							<div class="caption-heading"></div>
-							<div class="caption-desc" style="display: none;">
-								<a href="index.html#" title="" class="btn btn-primary btn-banner">LEARN MORE</a>
+
+		<!-- NAVBAR SECTION -->
+		<div class="navbar navbar-main navbar-fixed-top">
+			<div class="container">
+				<div class="top-sosmed pull-right">
+					<a
+						href="https://www.facebook.com/ciudaddesombras"
+						title=""
+						target="_blank"
+						><i class="fa-brands fa-facebook"></i
+					></a>
+					<a href="https://x.com/ciudaddesombras" title="" target="_blank"
+						><i class="fa-brands fa-x-twitter"></i
+					></a>
+					<a
+						href="https://www.tiktok.com/@ciudad.de.sombras.ec"
+						title=""
+						target="_blank"
+						><i class="fa-brands fa-tiktok"></i
+					></a>
+				</div>
+
+				<div class="navbar-header">
+					<button
+						type="button"
+						class="navbar-toggle"
+						data-toggle="collapse"
+						data-target=".navbar-collapse"
+					>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="images/cds-logo.jpg" alt="" />
+					</a>
+				</div>
+
+				<nav id="navbar-spy" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">INICIO</a></li>
+						<li class="dropdown">
+							<a
+								href="index.html#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								data-hover="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>PRENSA <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li><a href="noticias.html">Noticias</a></li>
+								<li><a href="eventos.html">Eventos</a></li>
+								<li><a href="editorial.html">Editorial</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="index.html#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								data-hover="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>ARTÍCULOS <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li><a href="poesia.html">Poesía</a></li>
+								<li><a href="narrativa.html">Narrativa</a></li>
+								<li><a href="/leyendas-pinsaqui.html">Leyendas</a></li>
+								<li><a href="/musica-chopin.html">Música</a></li>
+								<li><a href="/multimedia.html">Multimedia</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="index.html#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								data-hover="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>AUDIOTECA <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li><a href="audioteca-temporada-7.html">Temporada 7</a></li>
+								<li><a href="audioteca-temporada-6.html">Temporada 6</a></li>
+								<li><a href="audioteca-temporada-5.html">Temporada 5</a></li>
+								<li><a href="audioteca-temporada-4.html">Temporada 4</a></li>
+								<li><a href="audioteca-temporada-3.html">Temporada 3</a></li>
+								<li><a href="audioteca-temporada-2.html">Temporada 2</a></li>
+								<li><a href="audioteca-temporada-1.html">Temporada 1</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="index.html#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								data-hover="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>TELEVISIÓN <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li><a href="television-temporada-1.html">Temporada 1</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- BANNER -->
+		<div id="slides" class="section banner">
+			<ul class="slides-container">
+				<li>
+					<img src="images/slide-1-1.jpg" alt="" />
+					<div class="carousel-caption">
+						<div class="container">
+							<div class="wrap-caption">
+								<div class="caption-heading"></div>
+								<div class="caption-desc" style="display: none">
+									<a
+										href="index.html#"
+										title=""
+										class="btn btn-primary btn-banner"
+										>LEARN MORE</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- STUDIO -->
+		<div class="section feature" id="studio">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="blok feature-item">
+							<div class="gambar">
+								<img
+									src="images/devil-doll-1.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<a
+										href="devil-doll-o-la-voz-de-la-conciencia.html"
+										class="h4 blok-title"
+									>
+										Devil Doll o la voz de la conciencia
+									</a>
+									<p>
+										Cuando se habla de música, se suele hacer inferencias y
+										pensar que es clasificable por su calidad, composición,
+										estructura y género al que se pertenece.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="blok feature-item">
+							<div class="gambar">
+								<img
+									src="images/carolina-co.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<a
+										href="una-criatura-tragica-llamada-carolina.html"
+										class="h4 blok-title"
+									>
+										Una criatura trágica llamada Carolina Coronado
+									</a>
+									<p>
+										Los versos de la romántica y trágica Carolina Coronado se
+										hacen eco en esta taciturna biblioteca de la Ciudad de
+										Sombras.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="blok feature-item">
+							<div class="gambar">
+								<img
+									src="images/relicarios-01.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<a href="/relicarios-macabros.html" class="h4 blok-title">
+										Relicarios macabros
+									</a>
+									<p>
+										A lo largo de la historia, el ser humano ha sentido una gran
+										fascinación por aquellos temas extraños e inexplicables que
+										debido a su carácter despiertan interés y curiosidad.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="blok feature-item">
+							<div class="gambar">
+								<img
+									src="images/jardin-01.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<a
+										href="un-sombrio-jardin-de-tumbas-llamado.html"
+										class="blok-title"
+									>
+										Un sombrío jardín de tumbas llamado Père Lachaise
+									</a>
+									<p>
+										El necroturismo se ha convertido en una de las actividades
+										más interesantes que permiten a los visitantes acceder a
+										lugares poco convencionales.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</li>
-		</ul>
-	</div>
-	
-	<!-- STUDIO --> 
-	<div class="section feature" id="studio">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-sm-6 col-md-3">
-					<div class="blok feature-item">
-						<div class="gambar">
-							<img src="images/devil-doll-1.jpeg" alt="" class="img-responsive">
+			</div>
+		</div>
+
+		<!-- ABOUT SECTION -->
+		<div class="section about glass-blur bg1">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div>
+							<div class="item">
+								<img src="images/beauty.jpeg" alt="" class="img-responsive" />
+							</div>
 						</div>
-						<div class="item-body">
-							<div class="description">
-								<a href="devil-doll-o-la-voz-de-la-conciencia.html" class="h4 blok-title">
-									Devil Doll o la voz de la conciencia
+					</div>
+
+					<div class="col-sm-12 col-md-6">
+						<div class="welcome">
+							<h4 class="title-block">
+								POESÍA Y TRISTEZA EN LA MÚSICA DE BEAUTY OF GEMINA.
+							</h4>
+							<p>
+								Y dejamos a todos estos reyes y estos reinos del cáncer, y
+								dejamos todas estas peleas llenas de iraY dejamos todo esto
+								ahora, y nos ponemos de pie ahora, y nos escuchamos y vemosY
+								dejamos a todos estos maestros que no nos enseñan respuestasY
+								dejamos a todos estos...
+							</p>
+						</div>
+						<div class="caption-desc">
+							<a
+								href="/poesia-y-tristeza-en-la-musica-de.html"
+								title=""
+								class="btn btn-primary btn-banner"
+								>Continuar leyendo</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section about glass-blur bg2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div>
+							<div class="item">
+								<img
+									src="images/durmientes.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6">
+						<div class="welcome">
+							<h4 class="title-block">
+								EL MISTERIO DE LOS DURMIENTES DE TUMBAS.
+							</h4>
+							<p>
+								Desde tiempos inmemorables, el temor a la muerte ha sido uno de
+								los preceptos que han acompañado a la humanidad. Entonces ¿cómo
+								es posible que en la actualidad muchas personas decidan dormir
+								sobre frías lozas y acompañar el sueño de los muertos?
+								Durmientes de tumbas o cementerios es...
+							</p>
+						</div>
+						<div class="caption-desc">
+							<a
+								href="/el-misterio-de-los-durmientes-de-tumbas.html"
+								title=""
+								class="btn btn-primary btn-banner"
+								>Continuar leyendo</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SERVICES SECTION -->
+		<div class="section services" id="multimedia">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">MULTIMEDIA</h3>
+							<div class="border-style"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="blok services-item">
+							<div class="gambar">
+								<img src="images/radio-01.jpeg" alt="" class="img-responsive" />
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<h4 class="blok-title">
+										<a
+											href="/audioteca-temporada-6.html"
+											title=""
+											class="h4 btn"
+											style="margin: 0; padding: 0; font-size: 16px"
+											>RADIO</a
+										>
+									</h4>
+									<p>
+										Escucha y descarga los programas radiales de las 6
+										temporadas.
+									</p>
+									<a
+										href="/audioteca-temporada-6.html"
+										title=""
+										class="btn btn-primary"
+										>Continuar leyendo</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						<div class="blok services-item">
+							<div class="gambar">
+								<img
+									src="images/narrativa-01.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<h4 class="blok-title">NARRATIVA</h4>
+									<p>
+										Descubre artículos sobre literatura, leyendas, cultura
+										gótica y temática paranormal.
+									</p>
+									<a href="/narrativa.html" title="" class="btn btn-primary"
+										>Continuar leyendo</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						<div class="blok services-item">
+							<div class="gambar">
+								<img src="images/video-01.jpeg" alt="" class="img-responsive" />
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<h4 class="blok-title">AUDIOVISUAL</h4>
+									<p>
+										Disfruta de la primera temporada del contenido audiovisual
+										de Ciudad de Sombras.
+									</p>
+									<a
+										href="/television-temporada-1.html"
+										title=""
+										class="btn btn-primary"
+										>Continuar leyendo</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- VIDEO SECTION -->
+		<div class="section video bg2" id="gallery">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">VIDEO RECIENTE</h3>
+							<div class="border-style"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-8 col-md-offset-2">
+						<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe
+								width="100%"
+								src="https://www.youtube.com/embed/qYWSfwN4HlI?si=UugN55b-QgHehgb6"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- AUDIO SECTION -->
+		<div class="section audio">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">AUDIOTECA</h3>
+							<div class="border-style"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-8 col-md-offset-2">
+						<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe
+								data-src="https://www.ivoox.com/player_es_podcast_25662_zp_1.html?c1=382249"
+								width="100%"
+								height="400"
+								frameborder="0"
+								allowfullscreen=""
+								scrolling="no"
+								loading="lazy"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- TEAM SECTION -->
+		<div class="section team bg3" id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">EQUIPO</h3>
+							<div class="border-style"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-10 col-md-offset-1">
+						<div
+							class="bs-example bs-example-tabs"
+							data-example-id="togglable-tabs"
+						>
+							<ul id="myTabs" class="nav nav-tabs" role="tablist">
+								<li class="active">
+									<a
+										href="index.html#tab1"
+										aria-controls="tab1"
+										role="tab"
+										data-toggle="tab"
+										>Dirección General</a
+									>
+								</li>
+								<li class="">
+									<a
+										href="index.html#tab2"
+										aria-controls="tab2"
+										role="tab"
+										data-toggle="tab"
+										>Producción General</a
+									>
+								</li>
+								<li class="">
+									<a
+										href="index.html#tab3"
+										aria-controls="tab3"
+										role="tab"
+										data-toggle="tab"
+										>Coordinación Artística</a
+									>
+								</li>
+								<li class="">
+									<a
+										href="index.html#tab4"
+										aria-controls="tab4"
+										role="tab"
+										data-toggle="tab"
+										>Producción de Sonido</a
+									>
+								</li>
+								<li class="">
+									<a
+										href="index.html#tab5"
+										aria-controls="tab5"
+										role="tab"
+										data-toggle="tab"
+										>Ingeniería web</a
+									>
+								</li>
+							</ul>
+							<div id="myTabContent" class="tab-content">
+								<div role="tabpanel" class="tab-pane fade active in" id="tab1">
+									<div class="row">
+										<div class="col-sm-5 col-md-5">
+											<img
+												src="images/andre_acuna.jpeg"
+												alt=""
+												class="img-responsive"
+											/>
+										</div>
+										<div class="col-sm-7 col-md-7">
+											<div class="body-tab">
+												<h3>Andrea Acuña Cevillano</h3>
+												<p>
+													Comunicadora social, escritora y músico. Formada en la
+													Universidad Central y el Conservatorio Nacional de
+													Música.Ha sido parte de los talleres literarios
+													realizados por la Casa de la Cultura, sede Pichincha.
+												</p>
+												<p>
+													Creadora de la web cultural Letheo Producciones.
+													Fundadora de distintas agrupaciones musicales de la
+													escena gótica. Desde 2010 hasta la actualidad dirige
+													el proyecto radial y audiovisual Ciudad de Sombras.
+												</p>
+												<p>Amante de la oscuridad y la belleza.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab2">
+									<div class="row">
+										<div class="col-sm-5 col-md-5">
+											<img
+												src="images/cesar_acuna.jpeg"
+												alt=""
+												class="img-responsive"
+											/>
+										</div>
+										<div class="col-sm-7 col-md-7">
+											<div class="body-tab">
+												<h3>César Acuña</h3>
+												<p>
+													Abogado, productor y editor. Formado en la Universidad
+													Central del Ecuador. Ha sido creador, productor y
+													guionista de distintas producciones audiovisuales y
+													radiales enmarcados en la temática oscura y en la
+													criminología.
+												</p>
+												<p>
+													Desde 2010 hasta la actualidad ha sido productor del
+													proyecto radial y audiovisual Ciudad de Sombras.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab3">
+									<div class="row">
+										<div class="col-sm-5 col-md-5">
+											<img
+												src="images/santiago_segovia.jpeg"
+												alt=""
+												class="img-responsive"
+											/>
+										</div>
+										<div class="col-sm-7 col-md-7">
+											<div class="body-tab">
+												<h3>Santiago Segovia Michelena</h3>
+												<p>
+													Magister en artes escénicas. Formado en la Universidad
+													Central y en distintos colectivos artísticos de los
+													que ha sido parte. Director del colectivo
+													multidisciplinar Fractua, Teatro de Objetos.
+												</p>
+												<p>
+													Es creador de obras teatrales que hacen uso simbolista
+													de los objetos con la finalidad de dar paso a una
+													nueva resignificación de sus atributos en escena y la
+													manera en que se relaciona con el actor y manipulador.
+												</p>
+												<p>
+													Desde 2018 se desempeña como director de dramaturgia y
+													de actores del proyecto radial y audiovisual Ciudad de
+													Sombras.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab4">
+									<div class="row">
+										<div class="col-sm-5 col-md-5">
+											<img
+												src="images/dario_gross.jpeg"
+												alt=""
+												class="img-responsive"
+											/>
+										</div>
+										<div class="col-sm-7 col-md-7">
+											<div class="body-tab">
+												<h3>Darío Gross</h3>
+												<p>
+													Escritor, compositor y actor. Formado en la
+													Universidad San Francisco de Quito. Creador del
+													proyecto literario La Pluma Ensangrentada, Dark
+													ProductionS y Dark Beauty.
+												</p>
+												<p>
+													Fundador de las agrupaciones musicales de la escena
+													gótica Luctus Di y Carmina. Desde 2015 se desempeña
+													como escritor, diseñador gráfico, narrador y
+													presentador del proyecto radial y audiovisual Ciudad
+													de Sombras.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab5">
+									<div class="row">
+										<div class="col-sm-5 col-md-5">
+											<img
+												src="images/dario_chuquilla.jpeg"
+												alt=""
+												class="img-responsive"
+											/>
+										</div>
+										<div class="col-sm-7 col-md-7">
+											<div class="body-tab">
+												<h3>Darío Chuquilla</h3>
+												<p>
+													Analista de Sistemas graduado de la Escuela
+													Politécnica Nacional. Con experiencia en desarrollo de
+													software y gestión de proyectos tecnológicos desde
+													2010.
+												</p>
+												<p>
+													Apasionado por la innovación y la mejora continua en
+													el ámbito de las tecnologías de la información. Su
+													compromiso con la excelencia lo ha llevado a
+													participar en diversos proyectos dentro y fuera de
+													Ecuador.
+												</p>
+												<p>
+													Entre 2019 y 2021, trabajó para el medio de noticias
+													Primicias como fundador y director de tecnología,
+													donde implementó soluciones innovadoras para mejorar
+													la eficiencia y la calidad del contenido.
+												</p>
+												<p>
+													Actualmente, se desempeña como consultor
+													independiente, brindando asesoría en transformación
+													digital y optimización de procesos a diversas
+													organizaciones de Estados Unidos.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END TAB -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BLOG/NEWS SECTION -->
+		<div class="section blog" id="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">PRENSA</h3>
+							<div class="border-style"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="blog-item">
+							<div class="gambar">
+								<img
+									src="images/noticias-02.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<p class="lead">
+										<a href="noticias.html" title="">NOTICIAS</a>
+									</p>
+									<p>
+										La banda británica de rock y metal Anathema, pionera en el
+										desarrollo de géneros como el death y doom en los noventa, y
+										que luego ampliaría su espectro sonoro en vertientes
+										volátiles y alternativas, anunció su separación indefinida
+										luego de varios meses de inactividad a causa de la pandemia
+										de COVID-19.
+									</p>
+									<p class="readmore">
+										<a href="/noticias-anathema.html" title=""
+											>Leer más <span class="fa fa-chevron-circle-right"></span
+										></a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="blog-item">
+							<div class="gambar">
+								<img src="images/eventos.jpeg" alt="" class="img-responsive" />
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<p class="lead">
+										<a href="/eventos.html" title="">EVENTOS</a>
+									</p>
+									<p>
+										Este año, el festival GOTH VALLEY 2025 anuncia con orgullo
+										la llegada de un invitado exclusivo: A FLYING FISH, el
+										misterioso proyecto considerado el legítimo heredero del
+										inconfundible sonido de DEVIL DOLL. Una propuesta que
+										combina misticismo, teatralidad y música de culto para los
+										verdaderos amantes de lo alternativo.
+									</p>
+									<p class="readmore">
+										<a href="/eventos.html" title=""
+											>Leer más <span class="fa fa-chevron-circle-right"></span
+										></a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="blog-item">
+							<div class="gambar">
+								<img
+									src="images/noticias-01.jpeg"
+									alt=""
+									class="img-responsive"
+								/>
+							</div>
+							<div class="item-body">
+								<div class="description">
+									<p class="lead">
+										<a href="/editorial.html" title="">EDITORIAL</a>
+									</p>
+									<p>
+										En un mundo donde la prisa consume la belleza del silencio,
+										esta sección abre un espacio para reflexionar, sentir y
+										dialogar desde la penumbra. Aquí, las voces se entrelazan
+										entre la poesía y la razón, explorando lo oculto, lo
+										melancólico y lo sublime..
+									</p>
+									<p class="readmore">
+										<a href="/editorial.html" title=""
+											>Leer más <span class="fa fa-chevron-circle-right"></span
+										></a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- TESTIMONIALS SECTION -->
+		<div class="section testimony bg4" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">TESTIMONIOS</h3>
+							<div class="border-style"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-8 col-md-offset-2">
+						<div id="owl-testimony">
+							<div class="item">
+								<!-- Item Testimony #1 -->
+								<div class="item-testimony">
+									<div class="quote-box">
+										<blockquote class="quote">
+											Smart Template - fab lorem ipsum dolor sit amet proin
+											sagittis sodales pulvinar Mauris id arcu eget augue
+											condimentum euismod:
+											<a href="index.html#">http://bit.ly/1gB9UBR</a>
+										</blockquote>
+										<!--//quote-->
+									</div>
+									<div class="people row">
+										<img
+											class="img-rounded user-pic"
+											src="images/testimony-thumb-1.jpg"
+											alt=""
+										/>
+										<p class="details text-center">
+											<span class="title"
+												>Follow us on Twitter:
+												<a href="index.html#" title="">#nadamusic</a></span
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<!-- Item Testimony #2 -->
+								<div class="item-testimony">
+									<div class="quote-box">
+										<blockquote class="quote">
+											Smart Template - fab lorem ipsum dolor sit amet proin
+											sagittis sodales pulvinar Mauris id arcu eget augue
+											condimentum euismod:
+											<a href="index.html#">http://bit.ly/1gB9UBR</a>
+										</blockquote>
+										<!--//quote-->
+									</div>
+									<div class="people row">
+										<img
+											class="img-rounded user-pic"
+											src="images/testimony-thumb-2.jpg"
+											alt=""
+										/>
+										<p class="details text-center">
+											<span class="title"
+												>Follow us on Twitter:
+												<a href="index.html#" title="">#nadamusic</a></span
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<!-- Item Testimony #3 -->
+								<div class="item-testimony">
+									<div class="quote-box">
+										<blockquote class="quote">
+											Smart Template - fab lorem ipsum dolor sit amet proin
+											sagittis sodales pulvinar Mauris id arcu eget augue
+											condimentum euismod:
+											<a href="index.html#">http://bit.ly/1gB9UBR</a>
+										</blockquote>
+										<!--//quote-->
+									</div>
+									<div class="people row">
+										<img
+											class="img-rounded user-pic"
+											src="images/testimony-thumb-3.jpg"
+											alt=""
+										/>
+										<p class="details text-center">
+											<span class="title"
+												>Follow us on Twitter:
+												<a href="index.html#" title="">#nadamusic</a></span
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<!-- Item Testimony #4 -->
+								<div class="item-testimony">
+									<div class="quote-box">
+										<blockquote class="quote">
+											Smart Template - fab lorem ipsum dolor sit amet proin
+											sagittis sodales pulvinar Mauris id arcu eget augue
+											condimentum euismod:
+											<a href="index.html#">http://bit.ly/1gB9UBR</a>
+										</blockquote>
+										<!--//quote-->
+									</div>
+									<div class="people row">
+										<img
+											class="img-rounded user-pic"
+											src="images/testimony-thumb-4.jpg"
+											alt=""
+										/>
+										<p class="details text-center">
+											<span class="title"
+												>Follow us on Twitter:
+												<a href="index.html#" title="">#nadamusic</a></span
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<!-- Item Testimony #5 -->
+								<div class="item-testimony">
+									<div class="quote-box">
+										<blockquote class="quote">
+											Smart Template - fab lorem ipsum dolor sit amet proin
+											sagittis sodales pulvinar Mauris id arcu eget augue
+											condimentum euismod:
+											<a href="index.html#">http://bit.ly/1gB9UBR</a>
+										</blockquote>
+										<!--//quote-->
+									</div>
+									<div class="people row">
+										<img
+											class="img-rounded user-pic"
+											src="images/testimony-thumb-5.jpg"
+											alt=""
+										/>
+										<p class="details text-center">
+											<span class="title"
+												>Follow us on Twitter:
+												<a href="index.html#" title="">#nadamusic</a></span
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- END CAROUSEL -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CLIENT SECTION -->
+		<div class="section stat-client">
+			<div class="container">
+				<div class="row">
+					<div class="client-list" style="justify-content: center">
+						<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+							<div class="client-img">
+								<a
+									href="https://www.instagram.com/darkbeauty.accessories?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+									target="_blank"
+								>
+									<img
+										src="images/dkby.jpg"
+										alt=""
+										class="img-responsive"
+										style="width: 140px; height: 140px; border-radius: 50%"
+									/>
 								</a>
-								<p>Cuando se habla de música, se suele hacer inferencias y pensar que es clasificable por su calidad, composición, estructura y género al que se pertenece.</p>
 							</div>
 						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-md-3">
-					<div class="blok feature-item">
-						<div class="gambar">
-							<img src="images/carolina-co.jpeg" alt="" class="img-responsive">
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<a href="una-criatura-tragica-llamada-carolina.html" class="h4 blok-title">
-									Una criatura trágica llamada Carolina Coronado
+
+						<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+							<div class="client-img">
+								<a href="https://quientiene.com/" target="_blank">
+									<img
+										src="https://quientiene.com/quien_tiene_logo_c.jpg"
+										alt=""
+										class="img-responsive"
+										style="width: 140px; height: 140px; border-radius: 50%"
+									/>
 								</a>
-								<p>Los versos de la romántica y trágica Carolina Coronado se hacen eco en esta taciturna biblioteca de la Ciudad de Sombras.</p>
 							</div>
 						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-md-3">
-					<div class="blok feature-item">
-						<div class="gambar">
-							<img src="images/relicarios-01.jpeg" alt="" class="img-responsive">
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<a href="/relicarios-macabros.html" class="h4 blok-title">
-									Relicarios macabros
-								</a>
-								<p>A lo largo de la historia, el ser humano ha sentido una gran fascinación por aquellos temas extraños e inexplicables que debido a su carácter despiertan interés y curiosidad.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-md-3">
-					<div class="blok feature-item">
-						<div class="gambar">
-							<img src="images/jardin-01.jpeg" alt="" class="img-responsive">
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<a href="un-sombrio-jardin-de-tumbas-llamado.html" class="blok-title">
-									Un sombrío jardín de tumbas llamado Père Lachaise
-								</a>
-								<p>El necroturismo se ha convertido en una de las actividades más interesantes que permiten a los visitantes acceder a lugares poco convencionales.</p>
-								
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	
-	<!-- ABOUT SECTION -->
-	<div class="section about glass-blur bg1">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-sm-12 col-md-6">
-					
-					<div>
-						<div class="item">
-							<img src="images/beauty.jpeg" alt="" class="img-responsive" />
-						</div>
-					</div>
-					
-				</div>
 
-				<div class="col-sm-12 col-md-6">
-					
-					<div class="welcome">
-						<h4 class="title-block">POESÍA Y TRISTEZA EN LA MÚSICA DE BEAUTY OF GEMINA.</h4>
-						<p>Y dejamos a todos estos reyes y estos reinos del cáncer, y dejamos todas estas peleas llenas de iraY dejamos todo esto ahora, y nos ponemos de pie ahora, y nos escuchamos y vemosY dejamos a todos estos maestros que no nos enseñan respuestasY dejamos a todos estos...</p>
-					</div>
-					<div class="caption-desc">
-						<a href="/poesia-y-tristeza-en-la-musica-de.html" title="" class="btn btn-primary btn-banner">Continuar leyendo</a>
-					</div>
-					
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	<div class="section about glass-blur bg2">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-sm-12 col-md-6">
-					
-					<div>
-						<div class="item">
-							<img src="images/durmientes.jpeg" alt="" class="img-responsive" />
-						</div>
-					</div>
-					
-				</div>
-
-				<div class="col-sm-12 col-md-6">
-					
-					<div class="welcome">
-						<h4 class="title-block">EL MISTERIO DE LOS DURMIENTES DE TUMBAS.</h4>
-						<p>Desde tiempos inmemorables, el temor a la muerte ha sido uno de los preceptos que han acompañado a la humanidad. Entonces ¿cómo es posible que en la actualidad muchas personas decidan dormir sobre frías lozas y acompañar el sueño de los muertos? Durmientes de tumbas o cementerios es...</p>
-					</div>
-					<div class="caption-desc">
-						<a href="/el-misterio-de-los-durmientes-de-tumbas.html" title="" class="btn btn-primary btn-banner">Continuar leyendo</a>
-					</div>
-					
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	
-	<!-- SERVICES SECTION -->
-	<div class="section services" id="multimedia">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">MULTIMEDIA</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				
-				<div class="col-sm-6 col-md-4">
-					<div class="blok services-item">
-						<div class="gambar">
-							<img src="images/radio-01.jpeg" alt="" class="img-responsive">
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<h4 class="blok-title">
-									<a href="/audioteca-temporada-6.html" title="" class="h4 btn" style="margin: 0; padding: 0; font-size: 16px;">RADIO</a>
-								</h4>
-								<p>Escucha y descarga los programas radiales de las 6 temporadas.</p>
-								<a href="/audioteca-temporada-6.html" title="" class="btn btn-primary">Continuar leyendo</a>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<div class="blok services-item">
-						<div class="gambar">
-							<img src="images/narrativa-01.jpeg" alt="" class="img-responsive">
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<h4 class="blok-title">
-									NARRATIVA
-								</h4>
-								<p>Descubre artículos sobre literatura, leyendas, cultura gótica y temática paranormal.</p>
-								<a href="/narrativa.html" title="" class="btn btn-primary">Continuar leyendo</a>
-								
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-md-4">
-					<div class="blok services-item">
-						<div class="gambar">
-							<img src="images/video-01.jpeg" alt="" class="img-responsive">
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<h4 class="blok-title">
-									AUDIOVISUAL
-								</h4>
-								<p>Disfruta de la primera temporada del contenido audiovisual de Ciudad de Sombras.</p>
-								<a href="/television-temporada-1.html" title="" class="btn btn-primary">Continuar leyendo</a>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-				
-			</div>
-		</div>
-	</div>
-	
-	<!-- VIDEO SECTION -->
-	<div class="section video bg2" id="gallery">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">VIDEO RECIENTE</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-8 col-md-offset-2">
-					<!-- 16:9 aspect ratio -->
-					<div class="embed-responsive embed-responsive-16by9">
-					  <iframe width="100%" src="https://www.youtube.com/embed/qYWSfwN4HlI?si=UugN55b-QgHehgb6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
-
-	<!-- AUDIO SECTION -->
-	<div class="section audio">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">AUDIOTECA</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-8 col-md-offset-2">
-					<!-- 16:9 aspect ratio -->
-					<div class="embed-responsive embed-responsive-16by9">
-					  <iframe src="https://www.ivoox.com/player_es_podcast_25662_zp_1.html?c1=382249" width="100%" height="400" frameborder="0" allowfullscreen="" scrolling="no" loading="lazy"></iframe>
-					</div>
-
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
-
-	<!-- TEAM SECTION -->
-	<div class="section team bg3" id="team">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">EQUIPO</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-10 col-md-offset-1">
-					<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
-						<ul id="myTabs" class="nav nav-tabs" role="tablist">
-							<li class="active"><a href="index.html#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Dirección General</a></li>
-							<li class=""><a href="index.html#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Producción General</a></li>
-							<li class=""><a href="index.html#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Coordinación Artística</a></li>
-							<li class=""><a href="index.html#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Producción de Sonido</a></li>
-							<li class=""><a href="index.html#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Ingeniería web</a></li>
-						</ul>
-						<div id="myTabContent" class="tab-content">
-							<div role="tabpanel" class="tab-pane fade active in" id="tab1">
-								<div class="row">
-									<div class="col-sm-5 col-md-5">
-										<img src="images/andre_acuna.jpeg" alt="" class="img-responsive" />
-									</div>
-									<div class="col-sm-7 col-md-7">
-										<div class="body-tab">
-											<h3>Andrea Acuña Cevillano</h3>
-											<p>Comunicadora social, escritora y músico. Formada en la Universidad Central y el Conservatorio Nacional de Música.Ha sido parte de los talleres literarios realizados por la Casa de la Cultura, sede Pichincha.</p>
-											<p>Creadora de la web cultural Letheo Producciones. Fundadora de distintas agrupaciones musicales de la escena gótica. Desde 2010 hasta la actualidad dirige el proyecto radial y audiovisual Ciudad de Sombras.</p>
-											<p>Amante de la oscuridad y la belleza. </p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="tab2">
-								<div class="row">
-									<div class="col-sm-5 col-md-5">
-										<img src="images/cesar_acuna.jpeg" alt="" class="img-responsive" />
-									</div>
-									<div class="col-sm-7 col-md-7">
-										<div class="body-tab">
-											<h3>César Acuña</h3>
-											<p>Abogado, productor y editor. Formado en la Universidad Central del Ecuador. Ha sido creador, productor y guionista de distintas producciones audiovisuales y radiales enmarcados en la temática oscura y en la criminología.</p>
-											<p>Desde 2010 hasta la actualidad  ha sido productor del proyecto radial y audiovisual Ciudad de Sombras.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="tab3">
-								<div class="row">
-									<div class="col-sm-5 col-md-5">
-										<img src="images/santiago_segovia.jpeg" alt="" class="img-responsive" />
-									</div>
-									<div class="col-sm-7 col-md-7">
-										<div class="body-tab">
-											<h3>Santiago Segovia Michelena</h3>
-											<p>Magister en artes escénicas. Formado en la Universidad Central y en distintos colectivos artísticos de los que ha sido parte. Director del colectivo multidisciplinar Fractua, Teatro de Objetos.</p>
-											<p>Es creador de obras teatrales que hacen uso simbolista de los objetos con la finalidad de dar paso a una nueva resignificación de sus atributos en escena y la manera en que se relaciona con el actor y manipulador.</p>
-											<p>Desde 2018 se desempeña como director de dramaturgia y de actores del proyecto radial y audiovisual Ciudad de Sombras.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="tab4">
-								<div class="row">
-									<div class="col-sm-5 col-md-5">
-										<img src="images/dario_gross.jpeg" alt="" class="img-responsive" />
-									</div>
-									<div class="col-sm-7 col-md-7">
-										<div class="body-tab">
-											<h3>Darío Gross</h3>
-											<p>Escritor, compositor y actor. Formado en la Universidad San Francisco de Quito. Creador del proyecto literario La Pluma Ensangrentada, Dark ProductionS y Dark Beauty.</p>
-											<p>Fundador de las agrupaciones musicales de la escena gótica Luctus Di y Carmina. Desde 2015 se desempeña como escritor, diseñador gráfico, narrador y presentador del proyecto radial y audiovisual Ciudad de Sombras.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="tab5">
-								<div class="row">
-									<div class="col-sm-5 col-md-5">
-										<img src="images/dario_chuquilla.jpeg" alt="" class="img-responsive" />
-									</div>
-									<div class="col-sm-7 col-md-7">
-										<div class="body-tab">
-											<h3>Darío Chuquilla</h3>
-											<p>Analista de Sistemas graduado de la Escuela Politécnica Nacional. Con experiencia en desarrollo de software y gestión de proyectos tecnológicos desde 2010.</p>
-											<p>Apasionado por la innovación y la mejora continua en el ámbito de las tecnologías de la información. Su compromiso con la excelencia lo ha llevado a participar en diversos proyectos dentro y fuera de Ecuador.</p>
-											<p>Entre 2019 y 2021, trabajó para el medio de noticias Primicias como fundador y director de tecnología, donde implementó soluciones innovadoras para mejorar la eficiencia y la calidad del contenido.</p>
-											<p>Actualmente, se desempeña como consultor independiente, brindando asesoría en transformación digital y optimización de procesos a diversas organizaciones de Estados Unidos.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END TAB -->
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
-
-	<!-- BLOG/NEWS SECTION -->
-	<div class="section blog" id="news">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">PRENSA</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				
-				<div class="col-sm-12 col-md-4">
-					<div class="blog-item">
-						<div class="gambar">
-							<img src="images/noticias-02.jpeg" alt="" class="img-responsive" />
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<p class="lead">
-									<a href="noticias.html" title="">NOTICIAS</a>
-								</p>
-								<p>La banda británica de rock y metal Anathema, pionera en el desarrollo de géneros como el death y doom en los noventa, y que luego ampliaría su espectro sonoro en vertientes volátiles y alternativas, anunció su separación indefinida luego de varios meses de inactividad a causa de la pandemia de COVID-19.</p>
-								<p class="readmore"><a href="/noticias-anathema.html" title="">Leer más <span class="fa fa-chevron-circle-right"></span></a>
-								</p>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-4">
-					<div class="blog-item">
-						<div class="gambar">
-							<img src="images/eventos.jpeg" alt="" class="img-responsive" />
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<p class="lead">
-									<a href="/eventos.html" title="">EVENTOS</a>
-								</p>
-								<p>Este año, el festival GOTH VALLEY 2025 anuncia con orgullo la llegada de un invitado exclusivo: A FLYING FISH, el misterioso proyecto considerado el legítimo heredero del inconfundible sonido de DEVIL DOLL. Una propuesta que combina misticismo, teatralidad y música de culto para los verdaderos amantes de lo alternativo.</p>
-								<p class="readmore"><a href="/eventos.html" title="">Leer más <span class="fa fa-chevron-circle-right"></span></a>
-								</p>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-4">
-					<div class="blog-item">
-						<div class="gambar">
-							<img src="images/noticias-01.jpeg" alt="" class="img-responsive" />
-						</div>
-						<div class="item-body">
-							<div class="description">
-								<p class="lead">
-									<a href="/editorial.html" title="">EDITORIAL</a>
-								</p>
-								<p>En un mundo donde la prisa consume la belleza del silencio, esta sección abre un espacio para reflexionar, sentir y dialogar desde la penumbra. Aquí, las voces se entrelazan entre la poesía y la razón, explorando lo oculto, lo melancólico y lo sublime..</p>
-								<p class="readmore"><a href="/editorial.html" title="">Leer más <span class="fa fa-chevron-circle-right"></span></a>
-								</p>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	
-	<!-- TESTIMONIALS SECTION -->
-	<div class="section testimony bg4" style="display: none;">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">TESTIMONIOS</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-8 col-md-offset-2">
-					<div id="owl-testimony">
-						<div class="item"> <!-- Item Testimony #1 -->
-							<div class="item-testimony">
-								<div class="quote-box">
-									<blockquote class="quote">
-									 Smart Template - fab lorem ipsum dolor sit amet proin sagittis sodales pulvinar Mauris id arcu eget augue condimentum euismod: <a href="index.html#">http://bit.ly/1gB9UBR</a>
-									</blockquote><!--//quote-->
-								</div>
-								<div class="people row">
-									<img class="img-rounded user-pic" src="images/testimony-thumb-1.jpg" alt="">
-									<p class="details text-center">
-										<span class="title">Follow us on Twitter: <a href="index.html#" title="">#nadamusic</a></span>
-									</p>                        
-								</div>
-							</div>
-						</div>
-						<div class="item"> <!-- Item Testimony #2 -->
-							<div class="item-testimony">
-								<div class="quote-box">
-									<blockquote class="quote">
-									 Smart Template - fab lorem ipsum dolor sit amet proin sagittis sodales pulvinar Mauris id arcu eget augue condimentum euismod: <a href="index.html#">http://bit.ly/1gB9UBR</a>
-									</blockquote><!--//quote-->
-								</div>
-								<div class="people row">
-									<img class="img-rounded user-pic" src="images/testimony-thumb-2.jpg" alt="">
-									<p class="details text-center">
-										<span class="title">Follow us on Twitter: <a href="index.html#" title="">#nadamusic</a></span>
-									</p>                        
-								</div>
-							</div>
-						</div>
-						<div class="item"> <!-- Item Testimony #3 -->
-							<div class="item-testimony">
-								<div class="quote-box">
-									<blockquote class="quote">
-									 Smart Template - fab lorem ipsum dolor sit amet proin sagittis sodales pulvinar Mauris id arcu eget augue condimentum euismod: <a href="index.html#">http://bit.ly/1gB9UBR</a>
-									</blockquote><!--//quote-->
-								</div>
-								<div class="people row">
-									<img class="img-rounded user-pic" src="images/testimony-thumb-3.jpg" alt="">
-									<p class="details text-center">
-										<span class="title">Follow us on Twitter: <a href="index.html#" title="">#nadamusic</a></span>
-									</p>                        
-								</div>
-							</div>
-						</div>
-						<div class="item"> <!-- Item Testimony #4 -->
-							<div class="item-testimony">
-								<div class="quote-box">
-									<blockquote class="quote">
-									 Smart Template - fab lorem ipsum dolor sit amet proin sagittis sodales pulvinar Mauris id arcu eget augue condimentum euismod: <a href="index.html#">http://bit.ly/1gB9UBR</a>
-									</blockquote><!--//quote-->
-								</div>
-								<div class="people row">
-									<img class="img-rounded user-pic" src="images/testimony-thumb-4.jpg" alt="">
-									<p class="details text-center">
-										<span class="title">Follow us on Twitter: <a href="index.html#" title="">#nadamusic</a></span>
-									</p>                        
-								</div>
-							</div>
-						</div>
-						<div class="item"> <!-- Item Testimony #5 -->
-							<div class="item-testimony">
-								<div class="quote-box">
-									<blockquote class="quote">
-									 Smart Template - fab lorem ipsum dolor sit amet proin sagittis sodales pulvinar Mauris id arcu eget augue condimentum euismod: <a href="index.html#">http://bit.ly/1gB9UBR</a>
-									</blockquote><!--//quote-->
-								</div>
-								<div class="people row">
-									<img class="img-rounded user-pic" src="images/testimony-thumb-5.jpg" alt="">
-									<p class="details text-center">
-										<span class="title">Follow us on Twitter: <a href="index.html#" title="">#nadamusic</a></span>
-									</p>                        
-								</div>
-							</div>
-						</div>
-							
-						
-					</div>
-				
-					<!-- END CAROUSEL -->
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
-
-	<!-- CLIENT SECTION --> 
-	<div class="section stat-client">
-		<div class="container">
-			<div class="row">
-				<div class="client-list" style="justify-content: center;">
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-						<div class="client-img">
-							<a href="https://www.instagram.com/darkbeauty.accessories?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-								<img src="images/dkby.jpg" alt="" class="img-responsive" style="width: 140px; height: 140px; border-radius: 50%;" />
-							</a>
-						</div>
-					</div>
-					
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-						<div class="client-img">
-							<a href="https://quientiene.com/" target="_blank">
-								<img src="https://quientiene.com/quien_tiene_logo_c.jpg" alt="" class="img-responsive" style="width: 140px; height: 140px; border-radius: 50%;" />
-							</a>
-						</div>
-					</div>
-					
-					<!-- <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+						<!-- <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
 						<div class="client-img">
 							<img src="images/client3.png" alt="" class="img-responsive" />
 						</div>
@@ -723,224 +1116,280 @@
 							<img src="images/client3.png" alt="" class="img-responsive" />
 						</div>
 					</div> -->
-					
+					</div>
 				</div>
-				
 			</div>
 		</div>
-	</div>
-	
-	<!-- CONTACT SECTION --> 
-	<div class="section contact" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">CONTÁCTANOS</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-10 col-md-offset-1">
-					<p class="text-center cwhite">Si deseas recibir todo el contenido y noticias publicadas por la Ciudad de Sombras, además de participar por premios, entonces suscríbete a nuestro email: ciudaddesombras_ecuador@yahoo.es</p>
-				</div>
-				
-				<div class="clearfix"></div>
-				
-				<div class="contact-info">
-					<div class="col-sm-12 col-md-4">
-						<div class="contact-item">
-							<div class="icon"><span class="fa fa-phone"></span></div>
-							<div class="contact-item-body">
-								<div class="title">Teléfono</div>
-								<p>
-									<a href="https://api.whatsapp.com/send?phone=593982906817" target="_blank">
-										(+593) 98290 6817
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4" >
-						<div class="contact-item">
-							<div class="icon"><span class="fa fa-map-marker"></span></div>
-							<div class="contact-item-body">
-								<div class="title">Dirección</div>
-								<p>Quito, Ecuador</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4">
-						<div class="contact-item">
-							<div class="icon"><span class="fa fa-envelope"></span></div>
-							<div class="contact-item-body">
-								<div class="title">EMAIL</div>
-								<p><a href="mailto:ciudaddesombrasecuador@gmail.com" title="">ciudaddesombrasecuador@gmail.com</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-12 col-md-12">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7902336547486!2d-78.51022672503547!3d-0.21498669978289567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a25c31db3b5%3A0x6c011283454d8bce!2sBas%C3%ADlica%20del%20Voto%20Nacional!5e0!3m2!1ses-419!2sec!4v1761973092849!5m2!1ses-419!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			</div>
-			
-			<div class="row send-message">
-				<div class="col-sm-12 col-md-6 col-md-offset-3">
-					<div class="section-title">
-						<h3 class="lead">
-							<a href="mailto:ciudaddesombrasecuador@gmail.com" title="">
-								ENVÍANOS UN MENSAJE
-							</a>
-						</h3>
-						<div class="border-style"></div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- CONNECT SECTION -->
-	<div class="section connect bg5">
-		<div class="container">
-			
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<a href="https://www.facebook.com/ciudaddesombras" title="" target="_blank">
-						<div class="item">
-							<i class="fa-brands fa-facebook"></i>
-						</div>
-					</a>
-					<a href="https://x.com/ciudaddesombras" title="" target="_blank">
-						<div class="item">
-							<i class="fa-brands fa-x-twitter"></i>
-						</div>
-					</a>
-					<a href="https://www.youtube.com/@ciudaddesombras_ec" title="" target="_blank">
-						<div class="item">
-							<i class="fa-brands fa-youtube"></i>
-						</div>
-					</a>
-					<a href="https://www.instagram.com/ciudaddesombrasec/" title="" target="_blank">
-						<div class="item">
-							<i class="fa-brands fa-square-instagram"></i>
-						</div>
-					</a>
-					<a href="https://ivoox.com/podcast-podcast-ciudad-sombras_sq_f125662_1.html" title="" target="_blank">
-						<div class="item">
-							<i class="fa-solid fa-podcast"></i>
-						</div>
-					</a>
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
 
-	<!-- FOOTER SECTION -->
-	<div class="footer">
-	
-		<div class="f-desc">
+		<!-- CONTACT SECTION -->
+		<div class="section contact" id="contact">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4 col-md-4">
-						<div class="footer-item">
-							<div class="footer-title">
-								<h4>Acerca de nosotros</h4>
-							</div>
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">CONTÁCTANOS</h3>
+							<div class="border-style"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-10 col-md-offset-1">
+						<p class="text-center cwhite">
+							Si deseas recibir todo el contenido y noticias publicadas por la
+							Ciudad de Sombras, además de participar por premios, entonces
+							suscríbete a nuestro email: ciudaddesombras_ecuador@yahoo.es
+						</p>
+					</div>
 
-							<div class="about-info">
-								<p>
-									<a href="/about.html">Nosotros</a> <br />
-									<a href="/index.html#team">Equipo</a> <br />
-									<a href="/about.html#history">Historia</a> <br />
-									<a href="/about.html#segments">Segmentos</a>
-								</p>
+					<div class="clearfix"></div>
+
+					<div class="contact-info">
+						<div class="col-sm-12 col-md-4">
+							<div class="contact-item">
+								<div class="icon"><span class="fa fa-phone"></span></div>
+								<div class="contact-item-body">
+									<div class="title">Teléfono</div>
+									<p>
+										<a
+											href="https://api.whatsapp.com/send?phone=593982906817"
+											target="_blank"
+										>
+											(+593) 98290 6817
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<div class="contact-item">
+								<div class="icon"><span class="fa fa-map-marker"></span></div>
+								<div class="contact-item-body">
+									<div class="title">Dirección</div>
+									<p>Quito, Ecuador</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<div class="contact-item">
+								<div class="icon"><span class="fa fa-envelope"></span></div>
+								<div class="contact-item-body">
+									<div class="title">EMAIL</div>
+									<p>
+										<a href="mailto:ciudaddesombrasecuador@gmail.com" title=""
+											>ciudaddesombrasecuador@gmail.com</a
+										>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4 col-md-4">
-						<div class="footer-item">
-							<div class="footer-title">
-								<h4>Artículos Recientes</h4>
-							</div>
-							<div class="widget-wrap">
-								<div class="media">
-									<div class="media-left">
-										<a href="/devil-doll-o-la-voz-de-la-conciencia.html">
-										  <img class="media-object" src="images/devil-doll-1.jpeg" alt="...">
-										</a>
-									</div>
-									<div class="media-body">
-										<p><a href="/devil-doll-o-la-voz-de-la-conciencia.html" title="">Devil Doll o la voz de la conciencia </a></p>
-									</div>
-								</div>
-								<div class="media">
-									<div class="media-left">
-										<a href="/una-criatura-tragica-llamada-carolina.html">
-										  <img class="media-object" src="images/carolina-co.jpeg" alt="...">
-										</a>
-									</div>
-									<div class="media-body">
-										<p><a href="/una-criatura-tragica-llamada-carolina.html" title="">Una criatura trágica llamada Carolina Coronado</a></p>
-									</div>
-								</div>
-								<div class="media">
-									<div class="media-left">
-										<a href="/relicarios-macabros.html">
-										  <img class="media-object" src="images/relicarios-01.jpeg" alt="...">
-										</a>
-									</div>
-									<div class="media-body">
-										<p><a href="/relicarios-macabros.html" title=""> Relicarios macabros </a></p>
-									</div>
-								</div>
-								
-							</div>
-							
+
+					<div class="col-sm-12 col-md-12">
+						<iframe
+							data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7902336547486!2d-78.51022672503547!3d-0.21498669978289567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a25c31db3b5%3A0x6c011283454d8bce!2sBas%C3%ADlica%20del%20Voto%20Nacional!5e0!3m2!1ses-419!2sec!4v1761973092849!5m2!1ses-419!2sec"
+							width="100%"
+							height="450"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+
+				<div class="row send-message">
+					<div class="col-sm-12 col-md-6 col-md-offset-3">
+						<div class="section-title">
+							<h3 class="lead">
+								<a href="mailto:ciudaddesombrasecuador@gmail.com" title="">
+									ENVÍANOS UN MENSAJE
+								</a>
+							</h3>
+							<div class="border-style"></div>
 						</div>
 					</div>
-					
 				</div>
 			</div>
-				
 		</div>
-		
-		<div class="fcopy">
+
+		<!-- CONNECT SECTION -->
+		<div class="section connect bg5">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<p class="ftex">&copy; 2025 Ciudad de Sombras - Todos los derechos reservados</p>
+					<div class="col-sm-12 col-md-12">
+						<a
+							href="https://www.facebook.com/ciudaddesombras"
+							title=""
+							target="_blank"
+						>
+							<div class="item">
+								<i class="fa-brands fa-facebook"></i>
+							</div>
+						</a>
+						<a href="https://x.com/ciudaddesombras" title="" target="_blank">
+							<div class="item">
+								<i class="fa-brands fa-x-twitter"></i>
+							</div>
+						</a>
+						<a
+							href="https://www.youtube.com/@ciudaddesombras_ec"
+							title=""
+							target="_blank"
+						>
+							<div class="item">
+								<i class="fa-brands fa-youtube"></i>
+							</div>
+						</a>
+						<a
+							href="https://www.instagram.com/ciudaddesombrasec/"
+							title=""
+							target="_blank"
+						>
+							<div class="item">
+								<i class="fa-brands fa-square-instagram"></i>
+							</div>
+						</a>
+						<a
+							href="https://ivoox.com/podcast-podcast-ciudad-sombras_sq_f125662_1.html"
+							title=""
+							target="_blank"
+						>
+							<div class="item">
+								<i class="fa-solid fa-podcast"></i>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-	</div>
-	
-	
-	
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.superslides.js"></script>
-	<script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5'></script>
-	<script type="text/javascript" src="js/waypoints.min.js"></script>
-	
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
-	<!-- sendmail -->
-	<script type="text/javascript" src="js/validator.min.js"></script>
-	<script type="text/javascript" src="js/form-scripts.js"></script>
-	
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	
-	
-	
-	
-</body>
+
+		<!-- FOOTER SECTION -->
+		<div class="footer">
+			<div class="f-desc">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-md-4">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h4>Acerca de nosotros</h4>
+								</div>
+
+								<div class="about-info">
+									<p>
+										<a href="/about.html">Nosotros</a> <br />
+										<a href="/index.html#team">Equipo</a> <br />
+										<a href="/about.html#history">Historia</a> <br />
+										<a href="/about.html#segments">Segmentos</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h4>Artículos Recientes</h4>
+								</div>
+								<div class="widget-wrap">
+									<div class="media">
+										<div class="media-left">
+											<a href="/devil-doll-o-la-voz-de-la-conciencia.html">
+												<img
+													class="media-object"
+													src="images/devil-doll-1.jpeg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div class="media-body">
+											<p>
+												<a
+													href="/devil-doll-o-la-voz-de-la-conciencia.html"
+													title=""
+													>Devil Doll o la voz de la conciencia
+												</a>
+											</p>
+										</div>
+									</div>
+									<div class="media">
+										<div class="media-left">
+											<a href="/una-criatura-tragica-llamada-carolina.html">
+												<img
+													class="media-object"
+													src="images/carolina-co.jpeg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div class="media-body">
+											<p>
+												<a
+													href="/una-criatura-tragica-llamada-carolina.html"
+													title=""
+													>Una criatura trágica llamada Carolina Coronado</a
+												>
+											</p>
+										</div>
+									</div>
+									<div class="media">
+										<div class="media-left">
+											<a href="/relicarios-macabros.html">
+												<img
+													class="media-object"
+													src="images/relicarios-01.jpeg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div class="media-body">
+											<p>
+												<a href="/relicarios-macabros.html" title="">
+													Relicarios macabros
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fcopy">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p class="ftex">
+								&copy; 2025 Ciudad de Sombras - Todos los derechos reservados
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.superslides.js"></script>
+		<script
+			type="text/javascript"
+			src="https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5"
+		></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script
+			type="text/javascript"
+			src="js/bootstrap-hover-dropdown.min.js"
+		></script>
+		<!-- sendmail -->
+		<script type="text/javascript" src="js/validator.min.js"></script>
+		<script type="text/javascript" src="js/form-scripts.js"></script>
+
+		<script
+			type="text/javascript"
+			src="js/jquery.magnific-popup.min.js"
+		></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>

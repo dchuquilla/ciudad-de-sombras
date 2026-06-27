@@ -1,0 +1,75 @@
+# Enable mod_rewrite
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
+
+# Cache Control Headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Default: 1 hour
+  ExpiresDefault "access plus 1 hour"
+
+  # CSS and JavaScript: 30 days
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType text/javascript "access plus 30 days"
+
+  # Images: 60 days
+  ExpiresByType image/jpeg "access plus 60 days"
+  ExpiresByType image/gif "access plus 60 days"
+  ExpiresByType image/png "access plus 60 days"
+  ExpiresByType image/webp "access plus 60 days"
+  ExpiresByType image/svg+xml "access plus 60 days"
+  ExpiresByType image/x-icon "access plus 60 days"
+  ExpiresByType image/vnd.microsoft.icon "access plus 60 days"
+
+  # Fonts: 1 year
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+
+  # HTML: 1 hour (for frequent updates)
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Cache-Control Headers
+<IfModule mod_headers.c>
+  # CSS and JavaScript: 30 days
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+
+  # Images: 60 days
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    Header set Cache-Control "max-age=5184000, public"
+  </FilesMatch>
+
+  # Fonts: 1 year
+  <FilesMatch "\.(ttf|otf|woff|woff2)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+
+  # HTML: 1 hour (allows frequent updates)
+  <FilesMatch "\.html$">
+    Header set Cache-Control "max-age=3600, public"
+  </FilesMatch>
+
+  # Service Worker: no-cache (always check for updates)
+  <FilesMatch "^sw\.js$">
+    Header set Cache-Control "max-age=0, public, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Remove ETags
+<IfModule mod_headers.c>
+  Header unset ETag
+  FileETag None
+</IfModule>

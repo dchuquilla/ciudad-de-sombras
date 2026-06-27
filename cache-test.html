@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cache Strategy Test - Ciudad de Sombras</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: "Lato", Arial, sans-serif;
+				background-color: #222;
+				color: #ccc;
+				padding: 20px;
+			}
+			.container {
+				max-width: 800px;
+				margin: 0 auto;
+			}
+			h1 {
+				color: #2189ff;
+				margin-bottom: 20px;
+			}
+			h2 {
+				color: #2189ff;
+				margin-top: 30px;
+				margin-bottom: 15px;
+			}
+			.test-section {
+				background-color: #333;
+				border: 1px solid #555;
+				border-radius: 4px;
+				padding: 15px;
+				margin-bottom: 20px;
+			}
+			.test-item {
+				margin-bottom: 10px;
+				padding: 10px;
+				background-color: #2a2a2a;
+				border-left: 3px solid #2189ff;
+			}
+			.status-ok {
+				color: #4caf50;
+			}
+			.status-error {
+				color: #f44336;
+			}
+			.status-warning {
+				color: #ff9800;
+			}
+			button {
+				background-color: #2189ff;
+				color: white;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 4px;
+				cursor: pointer;
+				margin-top: 10px;
+			}
+			button:hover {
+				background-color: #1064c3;
+			}
+			code {
+				background-color: #1a1a1a;
+				padding: 2px 6px;
+				border-radius: 3px;
+				font-family: monospace;
+			}
+			pre {
+				background-color: #1a1a1a;
+				padding: 15px;
+				border-radius: 4px;
+				overflow-x: auto;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>🧪 Cache Strategy Test</h1>
+			<p>
+				Página de prueba para verificar la estrategia de cache implementada.
+			</p>
+
+			<!-- Service Worker Status -->
+			<div class="test-section">
+				<h2>Service Worker</h2>
+				<div class="test-item">
+					<strong>Estado:</strong> <span id="sw-status">Comprobando...</span>
+				</div>
+				<div class="test-item">
+					<strong>Versión de Cache:</strong> <span id="cache-version">-</span>
+				</div>
+				<button onclick="testServiceWorker()">Revisar Service Worker</button>
+			</div>
+
+			<!-- Cache Storage -->
+			<div class="test-section">
+				<h2>Cache Storage</h2>
+				<div class="test-item">
+					<strong>Estado:</strong>
+					<span id="cache-storage-status">Comprobando...</span>
+				</div>
+				<div id="cache-list"></div>
+				<button onclick="inspectCache()">Inspeccionar Cache</button>
+				<button onclick="clearCache()" style="background-color: #f44336">
+					Limpiar Cache
+				</button>
+			</div>
+
+			<!-- Lazy Load iframes -->
+			<div class="test-section">
+				<h2>Lazy Load iframes</h2>
+				<div class="test-item">
+					<strong>Estado:</strong>
+					<span id="iframe-status">Comprobando...</span>
+				</div>
+				<div class="test-item">
+					<strong>iframes detectados:</strong> <span id="iframe-count">-</span>
+				</div>
+				<button onclick="testIframes()">Probar iframes</button>
+			</div>
+
+			<!-- Network Performance -->
+			<div class="test-section">
+				<h2>Performance</h2>
+				<div class="test-item">
+					<strong>Tiempo de carga de recursos:</strong>
+					<div id="performance-data"></div>
+				</div>
+				<button onclick="measurePerformance()">Medir Performance</button>
+			</div>
+
+			<!-- Manual Cache Test -->
+			<div class="test-section">
+				<h2>Prueba Manual</h2>
+				<ol>
+					<li>Abre DevTools (F12)</li>
+					<li>Ve a: <code>Application → Service Workers</code></li>
+					<li>Deberías ver: <code>ciudad-sombras-v1</code></li>
+					<li>
+						Ve a: <code>Application → Cache Storage → ciudad-sombras-v1</code>
+					</li>
+					<li>Verifica los recursos cacheados</li>
+					<li>En la pestaña <code>Network</code>, recarga la página</li>
+					<li>
+						Los archivos cacheados mostrarán "(from service worker cache)"
+					</li>
+				</ol>
+			</div>
+
+			<!-- HTTP Cache Headers -->
+			<div class="test-section">
+				<h2>HTTP Cache Headers</h2>
+				<div id="headers-info"></div>
+				<button onclick="checkHeaders()">Verificar Headers</button>
+			</div>
+
+			<!-- Results Log -->
+			<div class="test-section">
+				<h2>Log de Pruebas</h2>
+				<pre id="test-log">
+Inicia las pruebas haciendo clic en los botones arriba...</pre
+				>
+			</div>
+		</div>
+
+		<script>
+			const log = (msg) => {
+				const logEl = document.getElementById("test-log");
+				const timestamp = new Date().toLocaleTimeString();
+				logEl.textContent = `[${timestamp}] ${msg}\n${logEl.textContent}`;
+			};
+
+			// Test Service Worker
+			async function testServiceWorker() {
+				log("Comprobando Service Worker...");
+				if ("serviceWorker" in navigator) {
+					try {
+						const regs = await navigator.serviceWorker.getRegistrations();
+						if (regs.length > 0) {
+							document.getElementById("sw-status").textContent = "✓ Registrado";
+							document.getElementById("sw-status").className = "status-ok";
+							log(`Service Worker activo: ${regs[0].scope}`);
+						} else {
+							document.getElementById("sw-status").textContent =
+								"✗ No registrado";
+							document.getElementById("sw-status").className = "status-error";
+							log("Service Worker no está registrado");
+						}
+					} catch (e) {
+						log(`Error: ${e.message}`);
+					}
+				} else {
+					document.getElementById("sw-status").textContent = "✗ No soportado";
+					document.getElementById("sw-status").className = "status-warning";
+					log("Service Workers no soportados en este navegador");
+				}
+			}
+
+			// Inspect Cache
+			async function inspectCache() {
+				log("Inspeccionando Cache...");
+				if ("caches" in window) {
+					const cacheNames = await caches.keys();
+					const cacheEl = document.getElementById("cache-list");
+					cacheEl.innerHTML = "";
+
+					if (cacheNames.length === 0) {
+						cacheEl.innerHTML =
+							'<div class="test-item"><em>Sin cache aún. Recarga la página para cachear recursos.</em></div>';
+						log("Sin cache almacenado");
+						return;
+					}
+
+					document.getElementById("cache-storage-status").textContent =
+						`✓ ${cacheNames.length} cache(s) encontrado(s)`;
+					document.getElementById("cache-storage-status").className =
+						"status-ok";
+
+					for (const name of cacheNames) {
+						const cache = await caches.open(name);
+						const keys = await cache.keys();
+						const div = document.createElement("div");
+						div.className = "test-item";
+						div.innerHTML = `<strong>${name}:</strong> ${keys.length} recursos<br>
+                        <small>${keys
+													.slice(0, 3)
+													.map((k) => k.url.split("/").pop())
+													.join(", ")}${keys.length > 3 ? "..." : ""}</small>`;
+						cacheEl.appendChild(div);
+						log(`Cache '${name}' contiene ${keys.length} recursos`);
+					}
+				} else {
+					log("Cache API no disponible");
+				}
+			}
+
+			// Clear Cache
+			async function clearCache() {
+				if (!confirm("¿Limpiar todo el cache?")) return;
+				log("Limpiando cache...");
+				const cacheNames = await caches.keys();
+				await Promise.all(cacheNames.map((name) => caches.delete(name)));
+				document.getElementById("cache-list").innerHTML = "";
+				log("Cache limpiado");
+			}
+
+			// Test iframes
+			function testIframes() {
+				log("Comprobando iframes...");
+				const iframes = document.querySelectorAll("iframe[data-src]");
+				document.getElementById("iframe-count").textContent = iframes.length;
+
+				if (iframes.length > 0) {
+					document.getElementById("iframe-status").textContent =
+						"✓ Lazy loading activo";
+					document.getElementById("iframe-status").className = "status-ok";
+					log(`${iframes.length} iframes con lazy loading detectados`);
+				} else {
+					log("No se encontraron iframes con lazy loading en esta página");
+				}
+			}
+
+			// Measure Performance
+			function measurePerformance() {
+				log("Midiendo performance...");
+				if (window.performance && window.performance.timing) {
+					const timing = window.performance.timing;
+					const navStart = timing.navigationStart;
+					const perfData = {
+						DNS: timing.domainLookupEnd - timing.domainLookupStart,
+						TCP: timing.connectEnd - timing.connectStart,
+						Request: timing.responseStart - timing.requestStart,
+						Response: timing.responseEnd - timing.responseStart,
+						"DOM Parse": timing.domComplete - timing.domLoading,
+						"Load Event": timing.loadEventEnd - timing.loadEventStart,
+						Total: timing.loadEventEnd - navStart,
+					};
+
+					let html = "<ul>";
+					for (const [key, val] of Object.entries(perfData)) {
+						html += `<li>${key}: ${val}ms</li>`;
+						log(`${key}: ${val}ms`);
+					}
+					html += "</ul>";
+					document.getElementById("performance-data").innerHTML = html;
+				}
+			}
+
+			// Check Headers
+			async function checkHeaders() {
+				log("Verificando HTTP headers...");
+				try {
+					const response = await fetch(window.location.href);
+					const headers = {
+						"Cache-Control": response.headers.get("cache-control"),
+						Expires: response.headers.get("expires"),
+						"Content-Encoding": response.headers.get("content-encoding"),
+						"Last-Modified": response.headers.get("last-modified"),
+					};
+
+					let html = "<ul>";
+					for (const [key, val] of Object.entries(headers)) {
+						if (val) {
+							html += `<li><strong>${key}:</strong> ${val}</li>`;
+							log(`${key}: ${val}`);
+						}
+					}
+					html += "</ul>";
+					document.getElementById("headers-info").innerHTML = html;
+				} catch (e) {
+					log(`Error al verificar headers: ${e.message}`);
+				}
+			}
+
+			// Auto-run on load
+			window.addEventListener("load", () => {
+				testServiceWorker();
+				setTimeout(inspectCache, 500);
+				testIframes();
+				measurePerformance();
+			});
+		</script>
+	</body>
+</html>
