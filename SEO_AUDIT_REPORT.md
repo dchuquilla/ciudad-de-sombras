@@ -218,7 +218,7 @@ Optimizadas con metadatos completos:
 
 **Canonical & Language (22 archivos):**
 ```html
-<link rel="canonical" href="https://ciudad-de-sombras.com/..." />
+<link rel="canonical" href="https://ciudaddesombras.com/..." />
 <meta name="language" content="Spanish" />
 <meta http-equiv="content-language" content="es-ES" />
 <html lang="es">
