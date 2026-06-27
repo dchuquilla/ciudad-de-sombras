@@ -65,6 +65,49 @@
 		=============================================== -->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
+		<style>
+			.title-card {
+				position: relative;
+				overflow: hidden;
+				border-radius: 4px;
+			}
+
+			.title-card::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-size: cover;
+				background-position: center;
+				opacity: 0;
+				transition: opacity 0.4s ease;
+				z-index: 0;
+				border-radius: 4px;
+				filter: blur(8px);
+			}
+
+			.title-card.active-image::before {
+				opacity: 0.3;
+			}
+
+			.title-card > div {
+				position: relative;
+				z-index: 1;
+			}
+
+			.legend-link {
+				transition: color 0.3s ease;
+				cursor: pointer;
+			}
+
+			.legend-link:hover {
+				color: #4db8ff !important;
+				text-shadow: 0 0 10px rgba(33, 137, 255, 0.5);
+			}
+		</style>
+
 		<script type="text/javascript" src="js/modernizr.min.js"></script>
 		<script type="text/javascript" src="js/cache-manager.js"></script>
 	</head>
@@ -146,7 +189,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="poesia.html">Poesía</a></li>
 								<li><a href="narrativa.html">Narrativa</a></li>
-								<li><a href="/leyendas-pinsaqui.html">Leyendas</a></li>
+								<li><a href="/leyenda.html">Leyendas</a></li>
 								<li><a href="/musica-chopin.html">Música</a></li>
 								<li><a href="/multimedia.html">Multimedia</a></li>
 							</ul>
@@ -224,22 +267,22 @@
 							<!-- Legends Grid -->
 							<div class="row" style="margin-top: 30px">
 								<!-- Pricolici -->
-								<div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+								<div class="col-sm-6 col-md-4 title-card" data-image="images/pricolici.jpeg" style="margin-bottom: 30px">
 									<div
 										style="
 											border: 1px solid #333;
 											border-radius: 4px;
 											padding: 20px;
 											height: 100%;
-											background-color: #222;
 											transition: all 0.3s ease;
 										"
-										onmouseover="this.style.backgroundColor='#2a2a2a'; this.style.borderColor='#2189ff'"
-										onmouseout="this.style.backgroundColor='#222'; this.style.borderColor='#333'"
+										onmouseover="this.style.borderColor='#2189ff'"
+										onmouseout="this.style.borderColor='#333'"
 									>
 										<h4 style="color: #2189ff; margin-top: 0">
 											<a
 												href="/la-leyenda-urbana-de-pricolici.html"
+												class="legend-link"
 												style="color: #2189ff; text-decoration: none"
 											>
 												La leyenda urbana de Pricolici
@@ -262,22 +305,22 @@
 								</div>
 
 								<!-- La Llorona -->
-								<div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+								<div class="col-sm-6 col-md-4 title-card" data-image="images/llorona.jpeg" style="margin-bottom: 30px">
 									<div
 										style="
 											border: 1px solid #333;
 											border-radius: 4px;
 											padding: 20px;
 											height: 100%;
-											background-color: #222;
 											transition: all 0.3s ease;
 										"
-										onmouseover="this.style.backgroundColor='#2a2a2a'; this.style.borderColor='#2189ff'"
-										onmouseout="this.style.backgroundColor='#222'; this.style.borderColor='#333'"
+										onmouseover="this.style.borderColor='#2189ff'"
+										onmouseout="this.style.borderColor='#333'"
 									>
 										<h4 style="color: #2189ff; margin-top: 0">
 											<a
 												href="/la-figura-espectral-de-la-llorona.html"
+												class="legend-link"
 												style="color: #2189ff; text-decoration: none"
 											>
 												La figura espectral de la Llorona
@@ -300,22 +343,22 @@
 								</div>
 
 								<!-- Pinsaquí -->
-								<div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+								<div class="col-sm-6 col-md-4 title-card" style="margin-bottom: 30px">
 									<div
 										style="
 											border: 1px solid #333;
 											border-radius: 4px;
 											padding: 20px;
 											height: 100%;
-											background-color: #222;
 											transition: all 0.3s ease;
 										"
-										onmouseover="this.style.backgroundColor='#2a2a2a'; this.style.borderColor='#2189ff'"
-										onmouseout="this.style.backgroundColor='#222'; this.style.borderColor='#333'"
+										onmouseover="this.style.borderColor='#2189ff'"
+										onmouseout="this.style.borderColor='#333'"
 									>
 										<h4 style="color: #2189ff; margin-top: 0">
 											<a
 												href="/el-espectro-fantasmal-que-habita-en-la-carretera-de-pinsaqui.html"
+												class="legend-link"
 												style="color: #2189ff; text-decoration: none"
 											>
 												El espectro fantasmal de Pinsaquí
@@ -471,5 +514,27 @@
 			src="js/jquery.magnific-popup.min.js"
 		></script>
 		<script type="text/javascript" src="js/script.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const titleCards = document.querySelectorAll('.title-card');
+				titleCards.forEach(card => {
+					const imageUrl = card.getAttribute('data-image');
+					if (imageUrl) {
+						card.addEventListener('mouseenter', function() {
+							this.style.backgroundImage = 'url(' + imageUrl + ')';
+							this.style.backgroundSize = 'cover';
+							this.style.backgroundPosition = 'center';
+							this.classList.add('active-image');
+						});
+
+						card.addEventListener('mouseleave', function() {
+							this.style.backgroundImage = 'none';
+							this.classList.remove('active-image');
+						});
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -92,8 +92,20 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  if (request.url.endsWith('.html') ||
-      request.url.endsWith('.css') ||
+  if (request.url.endsWith('.html')) {
+    event.respondWith(
+      fetch(request).then(response => {
+        const clonedResponse = response.clone();
+        caches.open(CACHE_NAME).then(cache => {
+          cache.put(request, clonedResponse);
+        });
+        return response;
+      }).catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  if (request.url.endsWith('.css') ||
       request.url.endsWith('.js') ||
       request.url.match(/\.(png|jpg|jpeg|svg|gif|webp)$/i)) {
     event.respondWith(
