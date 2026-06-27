@@ -70,6 +70,7 @@
 				position: relative;
 				overflow: hidden;
 				border-radius: 4px;
+				--bg-image: none;
 			}
 
 			.title-card::before {
@@ -79,6 +80,7 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
+				background-image: var(--bg-image);
 				background-size: cover;
 				background-position: center;
 				opacity: 0;
@@ -643,14 +645,12 @@
 					const imageUrl = card.getAttribute('data-image');
 					if (imageUrl) {
 						card.addEventListener('mouseenter', function() {
-							this.style.backgroundImage = 'url(' + imageUrl + ')';
-							this.style.backgroundSize = 'cover';
-							this.style.backgroundPosition = 'center';
+							this.style.setProperty('--bg-image', 'url(' + imageUrl + ')');
 							this.classList.add('active-image');
 						});
 
 						card.addEventListener('mouseleave', function() {
-							this.style.backgroundImage = 'none';
+							this.style.setProperty('--bg-image', 'none');
 							this.classList.remove('active-image');
 						});
 					}
